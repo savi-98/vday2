@@ -22,7 +22,7 @@ body {
     margin-top: 20px;
   }
   
-  .yes-button {
+  .boleh-button {
     font-size: 1.5em;
     padding: 10px 20px;
     margin-right: 10px;
@@ -33,7 +33,7 @@ body {
     cursor: pointer;
   }
   
-  .no-button {
+  .ngga-button {
     font-size: 1.5em;
     padding: 10px 20px;
     background-color: #f44336;
