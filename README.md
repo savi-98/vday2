@@ -14,10 +14,10 @@ I built this for **fun & learning**. If you fork or modify it:
 
 ## How It Works 
 
-This project consists of a simple webpage with a "Boleh" and "Ngga" button. When the user clicks the "Ngga" button, the button text changes to a series of  messages, and the "Boleh" button grows larger. If the user clicks the "Yes" button, they are redirected to a new page (`yes_page.html`).
+This project consists of a simple webpage with a "Boleh" and "No" button. When the user clicks the "No" button, the button text changes to a series of  messages, and the "Yes" button grows larger. If the user clicks the "Yes" button, they are redirected to a new page (`yes_page.html`).
 
 ### Features:
-- **Interactive Buttons**: The "Ngga" button cycles through , while the "Boleh" button grows in size.
+- **Interactive Buttons**: The "No" button cycles through , while the "No" button grows in size.
 - **Responsive Design**: The webpage is designed to work on all screen sizes.
 
 ---
@@ -48,7 +48,7 @@ This project consists of a simple webpage with a "Boleh" and "Ngga" button. When
 
 ### Key Functions:
 
-- `handleNoClick()`: Changes the "Ngga" button text and increases the size of the "Boleh" button.
+- `handleNoClick()`: Changes the "No" button text and increases the size of the "Yes" button.
 - `handleYesClick()`: Redirects the user to `yes_page.html`.
 
 ---
