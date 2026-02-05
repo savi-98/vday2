@@ -1,6 +1,6 @@
 (async function checkForUpdates() {
     const currentVersion = "1.0";
-    const versionUrl = "https://raw.githubusercontent.com/ivysone/Will-you-be-my-Valentine-/main/version.json"; 
+    const versionUrl = "https://raw.githubusercontent.com/ivysone/Will-you-be-my-Valentine-/main/version.json";
 
     try {
         const response = await fetch(versionUrl);
@@ -79,4 +79,19 @@ function handleNoClick() {
 
 function handleYesClick() {
     window.location.href = "yes_page.html";
+}
+
+const noButton = document.querySelector('.no-button');
+noButton.addEventListener('mouseenter', moveNoButton);
+
+function moveNoButton() {
+    const container = document.querySelector('.container');
+    const rect = container.getBoundingClientRect();
+    const buttonWidth = noButton.offsetWidth;
+    const buttonHeight = noButton.offsetHeight;
+    const newLeft = Math.random() * (rect.width - buttonWidth);
+    const newTop = Math.random() * (rect.height - buttonHeight);
+    noButton.style.position = 'absolute';
+    noButton.style.left = `${newLeft}px`;
+    noButton.style.top = `${newTop}px`;
 }
